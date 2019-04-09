@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: airports  
+server:
+  port: 8080
