@@ -2,4 +2,4 @@ spring:
   application:
     name: sales
 server:
-  port: 9081
+  port: 8080
