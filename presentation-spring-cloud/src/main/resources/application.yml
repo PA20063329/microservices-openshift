@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: presentation
+server:
+  port: 8080
+
+zuul:
+  ribbon:
+    listOfServers: zuul:8080
+
+hystrix.command.PricingCall.execution.isolation.thread.timeoutInMilliseconds: 2000
+
+hystrix:
+  threadpool:
+    SalesThreads:
+      coreSize: 20
+      maxQueueSize: 200
+      queueSizeRejectionThreshold: 200

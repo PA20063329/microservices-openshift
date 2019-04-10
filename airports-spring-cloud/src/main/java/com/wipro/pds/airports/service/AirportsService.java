@@ -25,6 +25,7 @@ public class AirportsService
 
 	public static void loadAirports() throws IOException
 	{
+		
 		if( airports.isEmpty() )
 		{
 			InputStream inputStream = AirportsService.class.getResourceAsStream( "/airports.csv" );

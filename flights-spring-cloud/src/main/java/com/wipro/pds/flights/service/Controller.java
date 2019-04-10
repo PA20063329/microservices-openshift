@@ -53,6 +53,7 @@ public class Controller
 	public List<Flight> query(@RequestParam( "date" ) String date, @RequestParam( "origin" ) String origin, @RequestParam( "destination" ) String destination)
 	{
 		//tracer.addTag( "Operation", "Look Up Flights" );
+		logger.info("Operation Look Up Flights" );
 		Map<String, Airport> airports = new HashMap<>();
 		Airport[] airportArray = restTemplate.getForObject( "http://zuul/airports/airports", Airport[].class );
 		for( Airport airport : airportArray )

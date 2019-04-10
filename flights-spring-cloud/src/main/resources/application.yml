@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: flights
+server:
+  port: 8080
+
+zuul:
+  ribbon:
+    listOfServers: zuul:8080
